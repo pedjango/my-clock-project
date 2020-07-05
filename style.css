@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+@media screen and (max-width: 770px) {
+  div#clock-wrapper {
+    padding: 30px 0;
+    margin: 30px 5%;
+  }
+  div#clock-wrapper h2 {
+    font-size: 36px;
+  }
+  div#clock {
+    font-size: 50px;
+  }
+  svg#clock-analog {
+    height: 70vh;
+    margin: 10px 5%;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  div#clock-wrapper {
+    padding: 20px 0;
+  }
+  div#clock-wrapper h2 {
+    font-size: 30px;
+  }
+  div#clock {
+    font-size: 40px;
+  }
+  svg#clock-analog {
+    height: 50vh;
+  }
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: rgba(3, 3, 13, 0.1);
+  height: 100vh;
+}
+
+#clock-wrapper, #clock-analog {
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(3, 3, 13, 0.3);
+  background-color: #fff;
+}
+
+#clock-wrapper {
+  margin: 30px 15%;
+  padding: 30px;
+}
+
+#clock-analog {
+  margin: 10px 15%;
+  width: 70%;
+}
+
+#clock-wrapper h2 {
+  text-align: center;
+  margin: -10px 0 0 0;
+  font-size: 48px;
+  color: #ccc;
+}
+
+#clock {
+  font-size: 64px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  flex-direction: column;
+}
+
+.circle {
+  fill: none;
+  stroke: #000;
+  stroke-width: 9;
+  stroke-miterlimit: 10;
+}
+
+.mid-circle {
+  fill: #000;
+}
+.hour-marks {
+  fill: none;
+  stroke: #000;
+  stroke-width: 9;
+  stroke-miterlimit: 10;
+}
+
+.hour-arm {
+  fill: none;
+  stroke: #000;
+  stroke-width: 17;
+  stroke-miterlimit: 10;
+}
+
+.minute-arm {
+  fill: none;
+  stroke: #000;
+  stroke-width: 11;
+  stroke-miterlimit: 10;
+}
+
+.second-arm {
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+}
+
+.sizing-box {
+  fill: none;
+}
+
+#hour,
+#minute,
+#second {
+  transform-origin: 300px 300px;
+  transition: transform .5s ease-in-out;
+}
